@@ -20,7 +20,7 @@ function reverseArray(arr){
     while(left<right){
         let temp=arr[left]
         arr[left]=arr[right]
-        temp=arr[right]
+        arr[right]=temp
         left++
         right--
     }
