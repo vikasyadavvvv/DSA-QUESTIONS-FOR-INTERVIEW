@@ -41,19 +41,19 @@ console.log(isArraySorted([1,2,3,4,4,4]))
 
 ## 4.Find the second largest element
 ```javascript
-function secondLargest(arr){
-  let largest=-Infinity
-  let seocnd=-Infinity
-for(let num of arr){
-if(num > largest){
-second=largest
-largest=num
+function secondLargest(arr) {
+  let largest = -Infinity
+  let seocnd = -Infinity
+  for (let num of arr) {
+    if (num > largest) {
+      second = largest
+      largest = num
+    }
+    else if (num < largest && num > second) {
+      second = num
+    }
+  }
+  return second === -Infinity ? -1 : second
 }
-else if(num < largest && num > second){
-second=num
-}
-}
-return second===-Infinity?-1:second
-}
-console.log(secondLargest([1,2,3,4,5,6]))
+console.log(secondLargest([1, 2, 3, 4, 5, 6]))
 ```
