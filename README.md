@@ -28,3 +28,13 @@ function reverseArray(arr){
 }
 console.log(reverseArray([1,2,3,4,5,6,7]))
 ```
+## 3.Check if an array is sorted
+```javascript
+function isArraySorted(arr){
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]>arr[i+1]) return false
+    }
+    return true
+}
+console.log(isArraySorted([1,2,3,4,4,4]))
+```
