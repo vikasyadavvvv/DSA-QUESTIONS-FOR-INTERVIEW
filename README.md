@@ -88,3 +88,28 @@ function uniqueElement(arr){
 }
 console.log(uniqueElement([1,2,2,2,3,4,5]))
 ```
+
+## 5.Rotate array by K positions
+```javascript
+function rotateArray(arr,k){
+    const n=arr.length;
+    if(n === 0) return arr;
+    k = k % n;
+    reverse(arr,0,n-1)
+    reverse(arr,0,k-1)
+    reverse(arr,k,n-1)
+    
+   return arr
+}
+
+function reverse(arr,left,right){
+    while(left<right){
+        let temp=arr[left]
+        arr[left]=arr[right]
+        arr[right]=temp
+        left++
+        right--
+    }
+}
+console.log(rotateArray([1,2,3,4,5,6],3))
+```
