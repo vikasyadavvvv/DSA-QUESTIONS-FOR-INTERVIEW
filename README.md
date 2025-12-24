@@ -113,3 +113,21 @@ function reverse(arr,left,right){
 }
 console.log(rotateArray([1,2,3,4,5,6],3))
 ```
+## 6.Move all zeros to the end
+```javascript
+function moveZero(arr){
+    let k=0;
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]!==0){
+            arr[k]=arr[i]
+            k++
+        }
+    }
+    while(k<arr.length){
+        arr[k]=0
+        k++
+    }
+    return arr
+}
+console.log(moveZero([1,2,3,4,5,0,6,6,6,0,8]))
+```
