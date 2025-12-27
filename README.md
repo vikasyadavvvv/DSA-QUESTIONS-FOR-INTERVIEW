@@ -131,7 +131,7 @@ function moveZero(arr){
 }
 console.log(moveZero([1,2,3,4,5,0,6,6,6,0,8]))
 ```
-## Find the sum of array elements
+## 7 Find the sum of array elements
 ```javascript
 function sumofElement(arr){
     let sum=0;
@@ -141,4 +141,18 @@ function sumofElement(arr){
     return sum
 }
 console.log(sumofElement([1,2,3,4,5]))
+```
+## 8. Find the missing number in range 1..N
+```javascript
+function findMissingNumber(arr){
+    const n=arr.length
+    let total=((n+1)*(n+2))/2
+    
+    let sum=0
+    for(let num of arr){
+        sum+=num
+    }
+    return total-sum
+}
+console.log(findMissingNumber([1,2,3,4,5,6,8]))
 ```
