@@ -1,4 +1,4 @@
-## 1.Find the largest and smallest element in an array
+## 1. Find the largest and smallest element in an array
 ```javascript
 function findLargestandSmallestElment(arr){
     let min=arr[0]
@@ -12,7 +12,7 @@ function findLargestandSmallestElment(arr){
 console.log(findLargestandSmallestElment([1,2,3,4,5,6,78]))
 ```
 
-## 2.Reverse an array
+## 2. Reverse an array
 ```javascript
 function reverseArray(arr){
     let left=0
@@ -28,7 +28,7 @@ function reverseArray(arr){
 }
 console.log(reverseArray([1,2,3,4,5,6,7]))
 ```
-## 3.Check if an array is sorted
+## 3. Check if an array is sorted
 ```javascript
 function isArraySorted(arr){
     for(let i=0;i<arr.length;i++){
@@ -39,7 +39,7 @@ function isArraySorted(arr){
 console.log(isArraySorted([1,2,3,4,4,4]))
 ```
 
-## 4.Find the second largest element
+## 4. Find the second largest element
 ```javascript
 function secondLargest(arr) {
   let largest = -Infinity
@@ -57,7 +57,7 @@ function secondLargest(arr) {
 }
 console.log(secondLargest([1, 2, 3, 4, 5, 6]))
 ```
-## 3.Count even and odd numbers
+## 5. Count even and odd numbers
 ```javascript
 function countEvenOdd(arr){
     let even=0
@@ -74,7 +74,7 @@ console.log(countEvenOdd([1,2,3,4,5]))
 
 ```
 
-## 4.Remove duplicates from a sorted array
+## 6. Remove duplicates from a sorted array
 ```javascript
 function uniqueElement(arr){
     let k=1
@@ -89,7 +89,7 @@ function uniqueElement(arr){
 console.log(uniqueElement([1,2,2,2,3,4,5]))
 ```
 
-## 5.Rotate array by K positions
+## 7. Rotate array by K positions
 ```javascript
 function rotateArray(arr,k){
     const n=arr.length;
@@ -113,7 +113,7 @@ function reverse(arr,left,right){
 }
 console.log(rotateArray([1,2,3,4,5,6],3))
 ```
-## 6.Move all zeros to the end
+## 8. Move all zeros to the end
 ```javascript
 function moveZero(arr){
     let k=0;
@@ -131,7 +131,7 @@ function moveZero(arr){
 }
 console.log(moveZero([1,2,3,4,5,0,6,6,6,0,8]))
 ```
-## 7 Find the sum of array elements
+## 9. Find the sum of array elements
 ```javascript
 function sumofElement(arr){
     let sum=0;
@@ -142,7 +142,7 @@ function sumofElement(arr){
 }
 console.log(sumofElement([1,2,3,4,5]))
 ```
-## 8. Find the missing number in range 1..N
+## 10. Find the missing number in range 1..N
 ```javascript
 function findMissingNumber(arr){
     const n=arr.length
