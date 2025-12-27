@@ -131,3 +131,14 @@ function moveZero(arr){
 }
 console.log(moveZero([1,2,3,4,5,0,6,6,6,0,8]))
 ```
+## Find the sum of array elements
+```javascript
+function sumofElement(arr){
+    let sum=0;
+    for(let i=0;i<arr.length;i++){
+        sum+=arr[i]
+    }
+    return sum
+}
+console.log(sumofElement([1,2,3,4,5]))
+```
